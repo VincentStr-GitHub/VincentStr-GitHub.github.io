@@ -1,0 +1,18 @@
+.grid-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: #444;
+    transition: all .1s ease-in;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    max-width: 600px;
+  }
+
+  .projectContainer:hover .grid-item{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+  }
+
