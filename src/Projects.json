@@ -1,0 +1,40 @@
+{
+  "Projects": [
+    {
+      "Name": "Calculator",
+      "ID": 0,
+      "CoverImg": "CalcCover",
+      "TechUsed": [
+        "React",
+        "CSS",
+        "HTML"
+      ],
+      "Preview": "",
+      "DateCreated": "05-06-2021"
+    },
+    {
+      "Name": "Quote Generator",
+      "ID": 1,
+      "CoverImg": "QuoteCover",
+      "TechUsed": [
+        "React",
+        "CSS",
+        "HTML"
+      ],
+      "Preview": "",
+      "DateCreated": "14-05-2021"
+    },
+    {
+      "Name": "Pomodore Clock",
+      "ID": 2,
+      "CoverImg": "PomoCover",
+      "TechUsed": [
+        "React",
+        "CSS",
+        "HTML"
+      ],
+      "Preview": "",
+      "DateCreated": "20-6-2021"
+    }
+  ]
+}

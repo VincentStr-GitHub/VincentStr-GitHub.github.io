@@ -1,8 +1,9 @@
-import Compo1 from "./compo1"
-import Compo2 from "./compo2"
 import "./style.css"
 import HomeProject from "./homeProject"
 
+const importI = "CalcCover"
+
+const imgCalc = require ("./images/" + importI + ".JPG")
 
 class App extends React.Component {
     constructor(props) {
@@ -110,37 +111,43 @@ function MainImage() {
         </div>
     )
 }
+const projectJSON = require("./Projects.json")
 
+const project1 = projectJSON.Projects[0]
+const project2 = projectJSON.Projects[1]
+const project3 = projectJSON.Projects[2]
 
+const MainProjects = (pArr) => {
+    const outArr =[]
+    for(let i = 0; i < pArr.length; i++){
+        const curProject = projectJSON.Projects[pArr[i]];
+        let curImg; 
+        try {
+            curImg = require("./images/"+ curProject.CoverImg + ".JPG");
+           
+          } catch (error) {
+            console.error(error);
+            curImg = "";
+          }
+
+        outArr.push(<HomeProject project = {{title: curProject.Name, cover: curImg} }/>)
+    }
+    console.log(outArr)
+    return (outArr)
+}
+
+const mainPArr = [0,1,2]
 
 function Project(props) {
     return (
         <div id="projects" style={props.modeStyle}>
             <div className="grid">
-                <HomeProject project = {{title: 'Quote Generator', cover: "https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg"} } />
-        
-                <HomeProject project = {{title: 'TO-DO List', cover: "https://clickup.com/blog/wp-content/uploads/2019/01/to-do-list-apps.png"} } />
-                <div className="grid-item">
-                    <h1>Project 1</h1>
-                    <Compo1 />
-                </div>
-
-
-
+                {MainProjects(mainPArr)}
             </div>
         </div>
     )
 }
-function DataProject(props) {
-    const placeHolderImage = "https://i.etsystatic.com/13242595/r/il/3e330f/1263105563/il_570xN.1263105563_5gzb.jpg"
-    return (
-        <div>
-            <Project name="Caluclator" image={placeHolderImage} />
-            <Project name="Quote" image={placeHolderImage} />
-            <Project name="Clock" image={placeHolderImage} />
-        </div>
-    )
-}
+
 function About(props) {
     return (
         <div id="about" className="about" style={props.modeStyle}>
@@ -160,7 +167,7 @@ function About(props) {
     )
 }
 
-function Footer(props) {
+ const Footer = (props) => {
     return (
         <div>
             <footer>
