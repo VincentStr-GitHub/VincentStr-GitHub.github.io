@@ -9,7 +9,7 @@ const HomeProject = (props) => {
     <div className='grid-item'>
       
         <p>{props.project.title}</p>
-        <img src={props.project.cover}></img>
+        <img className='coverImage' alt={props.project.alt} src={props.project.cover}></img>
     </div>
     </div>
  )

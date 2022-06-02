@@ -4,18 +4,20 @@
       "Name": "Calculator",
       "ID": 0,
       "CoverImg": "CalcCover",
+      "CoverALT" : "Picture of a calculator",
       "TechUsed": [
         "React",
         "CSS",
         "HTML"
       ],
-      "Preview": "",
+      "Preview": "https://cheerful-toffee-54031c.netlify.app/",
       "DateCreated": "05-06-2021"
     },
     {
       "Name": "Quote Generator",
       "ID": 1,
       "CoverImg": "QuoteCover",
+      "CoverALT" : "",
       "TechUsed": [
         "React",
         "CSS",
@@ -28,6 +30,7 @@
       "Name": "Pomodore Clock",
       "ID": 2,
       "CoverImg": "PomoCover",
+      "CoverALT" : "",
       "TechUsed": [
         "React",
         "CSS",

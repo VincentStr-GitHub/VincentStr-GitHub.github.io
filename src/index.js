@@ -1,9 +1,7 @@
 import "./style.css"
 import HomeProject from "./homeProject"
 
-const importI = "CalcCover"
 
-const imgCalc = require ("./images/" + importI + ".JPG")
 
 class App extends React.Component {
     constructor(props) {
@@ -73,12 +71,12 @@ function NavBar(props) {
 
             </ul>
             <MainImage />
-            <div id="homeImg" className="mainBody">
+            <div id="homeImg" className="mainBody">   </div>
 
                 <MainText modeStyle={modeStyle} />
                 <Project modeStyle={modeStyle} />
                 <About modeStyle={modeStyle} />
-            </div>
+         
             <Footer />
 
         </div>
@@ -113,9 +111,6 @@ function MainImage() {
 }
 const projectJSON = require("./Projects.json")
 
-const project1 = projectJSON.Projects[0]
-const project2 = projectJSON.Projects[1]
-const project3 = projectJSON.Projects[2]
 
 const MainProjects = (pArr) => {
     const outArr =[]
@@ -123,14 +118,14 @@ const MainProjects = (pArr) => {
         const curProject = projectJSON.Projects[pArr[i]];
         let curImg; 
         try {
-            curImg = require("./images/"+ curProject.CoverImg + ".JPG");
+            curImg = require("./images/"+ curProject.CoverImg + ".jpg");
            
           } catch (error) {
-            console.error(error);
+            //console.error(error);
             curImg = "";
           }
 
-        outArr.push(<HomeProject project = {{title: curProject.Name, cover: curImg} }/>)
+        outArr.push(<HomeProject key={curProject.ID} project = {{title: curProject.Name, cover: curImg, alt: curProject.CoverALT} }/>)
     }
     console.log(outArr)
     return (outArr)
@@ -140,10 +135,13 @@ const mainPArr = [0,1,2]
 
 function Project(props) {
     return (
+        <div>  <h1 style={props.modeStyle} className="projectsHeader">Projects</h1>
         <div id="projects" style={props.modeStyle}>
+          
             <div className="grid">
                 {MainProjects(mainPArr)}
             </div>
+        </div>
         </div>
     )
 }
