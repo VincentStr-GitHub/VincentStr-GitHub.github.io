@@ -12,7 +12,7 @@ class App extends React.Component {
     } render() {
         return (
             <div>
-                <NavBar />
+                <Content />
 
             </div>
         )
@@ -34,7 +34,7 @@ const darkStyle = {
 
 
 
-function NavBar(props) {
+function Content(props) {
     const [mode, setMode] = React.useState(true)
     const [curMode, setCurMode] = React.useState("Light Mode")
     const [modeStyle, setModeStyle] = React.useState(lightStyle)
@@ -47,7 +47,8 @@ function NavBar(props) {
         mode ? setModeStyle(darkStyle) : setModeStyle(lightStyle)
     }
     return (
-        <div className="navBar">
+        <div className="Content">
+            <nav>
             <ul>
                 <li><a href="#homeImg">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -70,6 +71,7 @@ function NavBar(props) {
                 </form>
 
             </ul>
+            </nav>
             <MainImage />
             <div id="homeImg" className="mainBody">   </div>
 

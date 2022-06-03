@@ -12,13 +12,21 @@
   }
 .coverImage{
   border-radius: 16px;
-  max-width: 600px;
-  max-height: 400px;
+  max-width: 800px;
+  max-height: 600px;
 
 }
   .projectContainer:hover .grid-item{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(181, 98, 253, 0.5) 0px 0px 0px 3px inset;
     transition: 0.5s;
+    color:rgb(161, 58, 251);
+    overflow: hidden;
+    opacity: 95%;
+    cursor: pointer;
+    outline: #444;
     transform: scale(1.05);
+  
   }
+  
+ 
 

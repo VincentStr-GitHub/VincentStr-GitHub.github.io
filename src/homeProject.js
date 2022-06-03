@@ -5,6 +5,7 @@ import "./homeProjects.css"
 
 const HomeProject = (props) => {
  return(
+ 
     <div className = "projectContainer">
     <div className='grid-item'>
       
@@ -12,6 +13,7 @@ const HomeProject = (props) => {
         <img className='coverImage' alt={props.project.alt} src={props.project.cover}></img>
     </div>
     </div>
+  
  )
 }
     

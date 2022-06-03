@@ -1,9 +1,18 @@
-.navBar {
+nav{
+  position: sticky;
+  top: 0;
+  background-color: rgba(4, 4, 4, 0.8);
+  backdrop-filter: blur(20px);
+  z-index: 1;
+}
+.Content {
   list-style-type: none;
   margin: 0;
   padding: 0;
   font-size: 1rem;
   font-family: monospace;
+  background-color: #333;
+
   
 
 }
@@ -13,8 +22,8 @@ ul {
   margin: 0;
   padding: 0.5rem;
   overflow: hidden;
-  background-color: rgba(4, 4, 4, 0.5);
-  backdrop-filter: blur(20px);
+  
+  
 }
 
 li {
