@@ -28,12 +28,7 @@
     
   }
 
-  @supports(-webkit-backdrop-filter: none) or (backdrop-filter: none){
-    .projectContainer:hover{
-      -webkit-backdrop-filter: blur(20px);
-      backdrop-filter: blur(20px);
-    }
-  }
+
   
  
 
