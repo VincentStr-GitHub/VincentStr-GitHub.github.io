@@ -1,4 +1,4 @@
-nav {
+.navBar {
   position: sticky;
   top: 0;
   background-color: rgba(20, 20, 20, 0.8);
@@ -6,7 +6,7 @@ nav {
 }
 
 @supports(-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  nav {
+  .navBar {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
   }

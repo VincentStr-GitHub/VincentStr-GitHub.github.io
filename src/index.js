@@ -1,23 +1,13 @@
 import "./style.css"
-import Home from "./Home/home"
+import Home from "./Home/home";
+import Contact from "./contact";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router,Routes ,Route, Link} from 'react-router-dom';
 
 
 
-class App extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
 
-        }
-    } render() {
-        return (
-            <div>
-                <Content />
-
-            </div>
-        )
-    }
-}
 
 const lightStyle = {
     color: "black",
@@ -31,7 +21,7 @@ const darkStyle = {
     transition: ".7s",
 }
 
-function Content(props) {
+function App() {
     const [mode, setMode] = React.useState(true)
     const [curMode, setCurMode] = React.useState("Light Mode")
     const [modeStyle, setModeStyle] = React.useState(lightStyle)
@@ -44,13 +34,15 @@ function Content(props) {
         mode ? setModeStyle(darkStyle) : setModeStyle(lightStyle)
     }
     return (
+        <Router>
+        <link rel="stylesheet" href="/style.css" />    
         <div className="Content">
-            <nav>
+            <nav className="navBar">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><a href="">Projects</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><Link to="/Contact">Contact</Link></li>
 
                     {/* Switch for Dark or Light Mode */}
                     <label className="switch">
@@ -70,14 +62,17 @@ function Content(props) {
                 </ul>
             </nav>
             <div id="homeImg" className="mainBody">   </div>
-
-
-
-            <Home modeStyle={modeStyle} />
-
         </div>
-
+        <Routes>
+        <Route path="/" element={<Home modeStyle={modeStyle}/>} />
+        <Route path="/contact" element={<Contact modeStyle={modeStyle}/>} />
+        <Route path="/dist/index.html" element={<Home modeStyle={modeStyle}/>} />
+        </Routes>
+        </Router>
+       
     )
 }
+
+
 
 ReactDOM.render(<App />, document.getElementById("root"))
