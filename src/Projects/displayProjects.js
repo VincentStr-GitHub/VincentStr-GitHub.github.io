@@ -1,8 +1,8 @@
 import React from 'react';
-import "./homeProjects.css"
+import "./displayProjectsStyle.css"
 
 
-const HomeProject = (props) => {
+const DisplayProjects = (props) => {
  return(
  
     <div className = "projectContainer">
@@ -17,4 +17,4 @@ const HomeProject = (props) => {
 }
     
 
-export default HomeProject
+export default DisplayProjects

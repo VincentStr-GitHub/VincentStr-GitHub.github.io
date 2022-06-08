@@ -1,0 +1,14 @@
+.textContact{
+    font-family: monospace;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+.contactPage{
+   margin-top: 70px;
+   min-height: 1000px;
+   background-color: aliceblue;
+}
+html{
+    background-color: black;
+}

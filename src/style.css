@@ -1,8 +1,11 @@
 .navBar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   background-color: rgba(20, 20, 20, 0.8);
   z-index: 1;
+  display: flex;
+  min-height: 70px;
 }
 
 @supports(-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -65,13 +68,9 @@ li a:hover {
   align-items: center;
 }
 
-
-
 body {
   margin: 0px;
 }
-
-
 
 .grid {
   width: 90%;
@@ -79,15 +78,17 @@ body {
   height: 100%;
   display: grid;
 
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
   padding: 10px;
   max-width: 2000px;
 }
 
-
-
+.hamNav {
+  margin-top: 10px;
+  width: 100%;
+ }
 
 
 @media only screen and (max-width: 1680px) {
@@ -104,21 +105,31 @@ body {
 @media only screen and (max-width: 1200px) {
   .searchBar {
     display: none;
-    width: 0;
-    height: 0;
   }
 
 }
 
+@media only screen and (min-width: 833px) {
+  #hamCheckBox {
+    display: none;
+   }
+   
 
-@media only screen and (max-width: 800px) {
+}
+
+
+@media only screen and (max-width: 833px) {
   .grid {
     grid-template-columns: 1fr;
   }
-
   .grid img {
     max-width: 100%;
   }
+  li{
+    float: none;
+  }
+
+
 }
 
 
@@ -135,6 +146,7 @@ form.searchBar {
 form.searchBar input[type=text] {
   padding: 13px;
   font-size: 17px;
+  min-width: 300px;
   border-style: none;
   float: left;
   width: 40%;
@@ -179,8 +191,8 @@ form.searchBar::after {
   margin-right: 0.5rem;
   width: 60px;
   height: 34px;
-  border-style: solid;
-  border: #7d0bda;
+  box-shadow: #7d0bda 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 16px;
 }
 
 .switch input {
@@ -199,6 +211,7 @@ form.searchBar::after {
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
+  
 }
 
 .slider:before {
@@ -230,16 +243,27 @@ input:checked+.slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+ 
 }
 
 .slider.round:before {
   border-radius: 50%;
+ 
 }
 
-.projectsHeader {
-  text-align: center;
-  padding: 30px;
-  margin-top: -10px;
-  margin-bottom: -10px;
-  font-size: 2.4rem;
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 3rem;
+}
+.menuBtns{
+  margin-left: 30px;
+}
+.modeBtn{
+  right: 0;
+  position: absolute;
+  margin-top: 10px;
 }

@@ -10,3 +10,11 @@
     font-size: 1.1rem;
     font-family: monospace;
   }
+  .projectsHeader {
+    text-align: center;
+    padding: 30px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-size: 2.4rem;
+    font-family: monospace;
+  }
