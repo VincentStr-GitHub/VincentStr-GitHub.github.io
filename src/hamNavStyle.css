@@ -9,7 +9,7 @@
   
   .navBarHam {
     width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+   
   }
   
   .nav-container {
@@ -91,17 +91,16 @@
   }
   
   .navBarHam .menu-items {
-    padding-top: 120px;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    padding-top: 50px;
     width: 80%;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
     margin-left: -40px;
-    padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
     background-color: black;
+    padding-right: 15px;
   }
   
   .navBarHam .menu-items li {
