@@ -1,3 +1,7 @@
+html{
+  background-color: #333;
+}
+
 .navBar {
   position: fixed;
   top: 0;
@@ -76,9 +80,7 @@ body {
   padding: 10px;
   max-width: 2000px;
 }
-.grid img {
-  max-width: 100%;
-}
+
 
 .hamNav {
   margin-top: 10px;

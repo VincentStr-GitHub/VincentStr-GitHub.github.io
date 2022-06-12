@@ -6,7 +6,7 @@ const PageNotFound = (props) =>{
     return (
         <div className="notFoundPage">
         <div className="textNF" style={props.modeStyle}>
-           <h1> The page you are looking for does not exists  <div className="sadIcon"><SadIcon /></div> </h1>
+           <h1> The page you are looking for does not exist<div className="sadIcon"><SadIcon /></div> </h1>
          
         </div>
         </div>
