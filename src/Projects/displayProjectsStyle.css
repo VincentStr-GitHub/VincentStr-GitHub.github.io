@@ -1,34 +1,31 @@
 .grid-item {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    color: #444;
-    transition: all .1s ease-in;
-    border-radius: 16px;
-    padding: 10px;
-    text-align: center;
-    font-size: 2rem;
-    font-family: monospace;
-  }
-.coverImage{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: #444;
+  transition: all .1s ease-in;
+  border-radius: 16px;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+.coverImage {
   border-radius: 16px;
   max-width: 100%;
   height: auto;
 
 }
-  .projectContainer:hover .grid-item{
-    box-shadow: rgba(181, 98, 253, 0.5) 0px 0px 0px 3px inset;
-    transition: 0.5s;
-    color:rgb(161, 58, 251);
-    overflow: hidden;
-    opacity: 95%;
-    cursor: pointer;
-    outline: #444;
-    transform: scale(1.05);
-    
-  }
 
+.projectContainer:hover .grid-item {
+  box-shadow: rgba(181, 98, 253, 0.5) 0px 0px 0px 3px inset;
+  transition: 0.5s;
+  color: rgb(161, 58, 251);
+  overflow: hidden;
+  opacity: 95%;
+  cursor: pointer;
+  outline: #444;
+  transform: scale(1.05);
 
-  
- 
-
+}

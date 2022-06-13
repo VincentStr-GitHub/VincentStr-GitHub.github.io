@@ -4,6 +4,7 @@ import Home from "./Home/home";
 import Footer from "./Footer/footer";
 import Contact from "./Contact/contact";
 import Project from "./Projects/project";
+import About from "./Contact/About/about";
 import PageNotFound from "./PageNotFound/pageNF";
 
 
@@ -38,9 +39,9 @@ function App() {
     return (
             <body>
                 <div id="page-container">
+                <div className="navFiller"></div>
                     <div className="Content">
                         <nav className="navBar">
-
                             <div class="navBarHam">
                                 <div class="container nav-container">
                                     <input class="checkbox" type="checkbox" name="" id="hamCheckBox" />
@@ -66,7 +67,7 @@ function App() {
                                         <ul className="menuBtns">
                                             <li><Link to="/">Home</Link></li>
                                             <li><Link to="projects">Projects</Link></li>
-                                            <li><a href="">About</a></li>
+                                            <li><Link to="About">About</Link></li>
                                             <li><Link to="contact">Contact</Link></li>
                                             <li>
                                                 <form className="searchBar">
@@ -90,6 +91,7 @@ function App() {
                             <Route path="contact" element={<Contact modeStyle={modeStyle} />} />
                             <Route path="dist/index.html" element={<Home modeStyle={modeStyle} />} />
                             <Route path="projects" element={<Project modeStyle={modeStyle} />} />
+                            <Route path="about" element={<About modeStyle={modeStyle} />} />
                         </Routes>
                     </div>
                     <Footer />

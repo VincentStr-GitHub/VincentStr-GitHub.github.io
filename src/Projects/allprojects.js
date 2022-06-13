@@ -7,7 +7,7 @@ const listProjects = [0,1,2]
 
 function AllProjects(props) {
     return (
-        <div> <h1 style={props.modeStyle} className="projectsHeader">Projects</h1>
+        <div> <h1 style={props.modeStyle} className="allprojectsHeader">Projects</h1>
         <div id="projects" style={props.modeStyle}>
           
             <div className="projectGrid">

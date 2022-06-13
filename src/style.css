@@ -248,3 +248,7 @@ input:checked+.slider:before {
   position: absolute;
   margin-top: 10px;
 }
+.navFiller{
+  height: 44px;
+  width: 100%;
+}

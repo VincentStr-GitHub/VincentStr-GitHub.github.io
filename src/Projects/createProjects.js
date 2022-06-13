@@ -17,7 +17,6 @@ const CreateProjects = (pArr) => {
 
         outArr.push(<DisplayProjects key={curProject.ID} project = {{title: curProject.Name, cover: curImg, alt: curProject.CoverALT} }/>)
     }
-    console.log(outArr)
     return (outArr)
 }
 
