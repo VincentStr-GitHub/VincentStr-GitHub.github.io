@@ -44,7 +44,7 @@ function App() {
                         <nav className="navBar">
                             <div class="navBarHam">
                                 <div class="container nav-container">
-                                    <input class="checkbox" type="checkbox" name="" id="hamCheckBox" />
+                                    <input aria-label="Mobile Navigation Menu" class="checkbox" type="checkbox" name="" id="hamCheckBox" />
                                     <div class="hamburger-lines">
                                         <span class="line line1"></span>
                                         <span class="line line2"></span>
@@ -54,7 +54,7 @@ function App() {
                                     <div className="modeBtn">
                                         {/* Switch for Dark or Light Mode */}
                                         <label className="switch">
-                                            <input onClick={handleClick} type="checkbox" />
+                                            <input aria-label="Dark and Light Mode switch" name="modeSwitch" onClick={handleClick} type="checkbox" />
                                             <span className="slider round"></span>
                                         </label>
 
@@ -72,7 +72,7 @@ function App() {
                                             <li>
                                                 <form className="searchBar">
                                                     <input placeholder="Search" id="searchB" style={modeStyle} type="text"></input>
-                                                    <button name="submit" style={modeStyle} type="submit"><i className="fa fa-search"></i></button>
+                                                    <button aria-label="Search Button" name="submit" style={modeStyle} type="submit"><i className="fa fa-search"></i></button>
                                                 </form>
                                             </li>
                                         </ul>
