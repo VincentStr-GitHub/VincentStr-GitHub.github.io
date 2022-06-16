@@ -1,11 +1,11 @@
 import React from "react"
 import CreateProjects from "./createProjects"
-import "./allProjectsStyle.css"
+import "./allProjectsGridStyle.css"
 
 
 const listProjects = [0,1,2]
 
-function AllProjects(props) {
+function AllProjectsGrid(props) {
     return (
         <div> <h1 style={props.modeStyle} className="allprojectsHeader">Projects</h1>
         <div id="projects" style={props.modeStyle}>
@@ -18,4 +18,4 @@ function AllProjects(props) {
     )
 }
 
-export default AllProjects
+export default AllProjectsGrid

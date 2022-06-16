@@ -1,13 +1,11 @@
 import React from 'react';
-import AllProjects from './allprojects';
+import AllProjectsGrid from './allProjectsGrid';
 
 
 const Project = (props) => {
     return (
         <div>
-           
-            <AllProjects modeStyle={props.modeStyle} />
-           
+            <AllProjectsGrid modeStyle={props.modeStyle} />
         </div>
     )
 }

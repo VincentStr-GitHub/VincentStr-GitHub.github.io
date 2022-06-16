@@ -4,8 +4,9 @@ import Home from "./Home/home";
 import Footer from "./Footer/footer";
 import Contact from "./Contact/contact";
 import Project from "./Projects/project";
-import About from "./Contact/About/about";
+import About from "./About/about";
 import PageNotFound from "./PageNotFound/pageNF";
+import ProjectPage from "./Projects/projectPage";
 
 
 import React from "react";
@@ -29,6 +30,9 @@ function App() {
     const [curMode, setCurMode] = React.useState("Light Mode")
     const [modeStyle, setModeStyle] = React.useState(lightStyle)
 
+    function unCheck(){
+        document.querySelector('#hamCheckBox').checked = false;
+    }
 
     function handleClick() {
         setMode(!mode)
@@ -65,10 +69,10 @@ function App() {
                                     </div>
                                     <div class="menu-items">
                                         <ul className="menuBtns">
-                                            <li><Link to="/">Home</Link></li>
-                                            <li><Link to="projects">Projects</Link></li>
-                                            <li><Link to="About">About</Link></li>
-                                            <li><Link to="contact">Contact</Link></li>
+                                            <li onClick={unCheck}><Link to="/">Home</Link></li>
+                                            <li onClick={unCheck}><Link to="projects">Projects</Link></li>
+                                            <li onClick={unCheck}><Link to="About">About</Link></li>
+                                            <li onClick={unCheck}><Link to="contact">Contact</Link></li>
                                             <li>
                                                 <form className="searchBar">
                                                     <input placeholder="Search" id="searchB" style={modeStyle} type="text"></input>
@@ -86,11 +90,12 @@ function App() {
                     <div id="content-wrap">
                         <Routes>
                             <Route path="/" element={<Home modeStyle={modeStyle} />} />
-                            {/* No Match route goes to the Home page */}
                             <Route path="*" element={<PageNotFound />} />
                             <Route path="contact" element={<Contact modeStyle={modeStyle} />} />
                             <Route path="dist/index.html" element={<Home modeStyle={modeStyle} />} />
-                            <Route path="projects" element={<Project modeStyle={modeStyle} />} />
+                            <Route path="projects" element={<Project modeStyle={modeStyle} />} > 
+                                <Route path=":projectId" element={<ProjectPage />}/>
+                            </Route>
                             <Route path="about" element={<About modeStyle={modeStyle} />} />
                         </Routes>
                     </div>

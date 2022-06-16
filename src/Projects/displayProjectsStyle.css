@@ -29,3 +29,14 @@
   transform: scale(1.05);
 
 }
+.projectContainer:hover .grid-item .projectTitle{
+  color: rgb(161, 58, 251);
+  transition: 0.5s;
+}
+.grid-item a:link{
+  
+  text-decoration: none;
+}
+.projectTitle{
+  color: #444;
+}

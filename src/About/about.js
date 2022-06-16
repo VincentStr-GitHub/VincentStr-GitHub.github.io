@@ -4,7 +4,9 @@ const About = (props) =>{
     return (
         <div className="aboutPage">
         <div className="textAbout" style={props.modeStyle}>
-            <p> Hello, <br /> I am Vincent Strigel</p>
+            <p> 
+                Hello, <br /> I am Vincent Strigel, a Computer Science studtent at the Technische Hochschule Ulm, currently in my 2nd semseter. 
+            </p>
         </div>
         </div>
     )
