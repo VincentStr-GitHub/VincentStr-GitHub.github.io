@@ -1,7 +1,6 @@
 import React from 'react';
 import "./displayProjectsStyle.css"
 import { Link, Outlet } from 'react-router-dom';
-import ProjectPage from './projectPage';
 
 
 const DisplayProjects = (props) => {

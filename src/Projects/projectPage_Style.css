@@ -1,0 +1,39 @@
+.projectPageGrid {
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.project-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: #444;
+    transition: all .1s ease-in;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: monospace;
+}
+.project-preview{
+    border-style: none;
+    border-radius: 16px;
+    min-height: 60vh;
+}
+
+#item-Title{
+    grid-column: 1 / span 3;
+}
+#item-Preview{
+    grid-column: 1 / span 2;
+    
+}
+#item-Tech{
+    grid-column: 1 / span 2;
+}
