@@ -62,7 +62,7 @@ function App() {
                                         <span className="slider round"></span>
                                     </label>
 
-                                    <div className="modeText" style={{ float: 'right', marginRight: '0.5rem' }}>
+                                    <div className="modeText" style={{ float: 'right', paddingRight: '0.5rem', margin: "0 auto" }}>
                                         <p style={{ color: 'white' }}><b>{curMode}</b></p>
                                     </div>
 

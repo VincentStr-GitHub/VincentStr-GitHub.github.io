@@ -3,6 +3,7 @@
     {
       "Name": "Calculator",
       "ID": 0,
+      "Type": "Personal",
       "CoverImg": "CalcCover",
       "CoverALT" : "Picture of a calculator",
       "TechUsed": [
@@ -11,11 +12,13 @@
         "HTML"
       ],
       "Preview": "https://simplecalculator-react.netlify.app/",
+      "Github":"",
       "DateCreated": "05-06-2021"
     },
     {
       "Name": "Quote Generator",
       "ID": 1,
+      "Type": "Personal",
       "CoverImg": "QuoteCover",
       "CoverALT" : "",
       "TechUsed": [
@@ -24,11 +27,13 @@
         "HTML"
       ],
       "Preview": "https://quotegeneratorvs.netlify.app/",
+      "Github":"",
       "DateCreated": "14-05-2021"
     },
     {
       "Name": "Pomodore Clock",
       "ID": 2,
+      "Type": "Personal",
       "CoverImg": "PomoCover",
       "CoverALT" : "",
       "TechUsed": [
@@ -37,7 +42,22 @@
         "HTML"
       ],
       "Preview": "",
+      "Github":"",
       "DateCreated": "20-6-2021"
+    },
+    {
+      "Name": "Pathfinder",
+      "ID": 3,
+      "Type": "School",
+      "CoverImg": "PathCover",
+      "CoverALT" : "Checkerboard",
+      "TechUsed": [
+        "Java",
+        "JavaFX"
+      ],
+      "Preview": "PathShow.gif",
+      "Github":"",
+      "DateCreated": "30-3-2022"
     }
   ]
 }

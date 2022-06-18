@@ -48,6 +48,11 @@
 .iframe-loading{
     background: url("./images/Spinner-1.3s-244px.gif")center center no-repeat;
 }
+.sImg{
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 16px;
+}
 
 @media only screen and (min-width: 833px) {
     #item-Title{
@@ -60,7 +65,9 @@
     #item-Tech{
         grid-column: 1 / span 2;
     }
-     
+     #sText{
+        grid-column: 2 / span 3;
+     }
   }
 
 

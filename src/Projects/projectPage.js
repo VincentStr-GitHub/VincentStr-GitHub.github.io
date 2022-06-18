@@ -1,9 +1,13 @@
 import React from "react";
 import { useParams, Navigate } from "react-router-dom";
 import "./projectPage_Style.css"
-import ArrowIcon from "./svgs/arrowIcon";
 
-const GitHubLogo = require("./images/GitHub-Mark-64px.png")
+import PersonalProject from "./ProjectType/personalProject";
+import SchoolProject from "./ProjectType/schoolProject";
+
+
+
+
 const pJSON = require("../Projects.json")
 
 const ProjectPage = (props) => {
@@ -13,15 +17,20 @@ const ProjectPage = (props) => {
         return <Navigate to="notFound" />
     }
     const curProject = curObj[0]
+    let projectType = null
+    let textStyle = null
+    if(curProject.Type === "Personal"){
+        projectType = <PersonalProject title={curProject.Name} preview ={curProject.Preview} />
+    } else{
+        projectType = <SchoolProject img={curProject.Preview} />
+       textStyle="sText"
+    }
     return (
 
         <div className="projectPageGrid" style={props.modeStyle}>
             <div className="project-item" id="item-Title"> <h1>{curProject.Name}</h1></div>
-            <div className="project-item" id="item-Preview">
-                <div class="iframe-loading"><iframe className="project-preview" title={curProject.name + "Project Preview"} src={curProject.Preview}></iframe></div>
-                <div className="project-links"> <a href=""><img src={GitHubLogo} /></a> <div id="codeIcon"><ArrowIcon /></div> </div>
-            </div>
-            <div className="project-item"> <p>Text</p> </div>
+             {projectType}
+            <div className="project-item" id={textStyle}> <p>Text</p> </div>
             <div className="project-item" id="item-Tech"> TechUsed </div>
             <div className="project-item"> {curProject.DateCreated}</div>
         </div>

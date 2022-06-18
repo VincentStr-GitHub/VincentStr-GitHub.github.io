@@ -2,11 +2,11 @@ import React from 'react';
 import CreateProjects from "../Projects/createProjects"
 
 
-const mainPArr = [0,1,2]
+const mainPArr = [0,1,2,3]
 
 function Projects(props) {
     return (
-        <div>  <h1 style={props.modeStyle} className="projectsHeader">Projects</h1>
+        <div>  <h1 style={props.modeStyle} className="projectsHeader">Favorite Projects</h1>
         <div id="projects" style={props.modeStyle}>
           
             <div className="grid">
