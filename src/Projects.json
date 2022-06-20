@@ -52,8 +52,7 @@
       "CoverImg": "PathCover",
       "CoverALT" : "Checkerboard",
       "TechUsed": [
-        "Java",
-        "JavaFX"
+        "Java"
       ],
       "Preview": "PathShow.gif",
       "Github":"",

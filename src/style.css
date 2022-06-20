@@ -52,17 +52,6 @@ li a:hover {
   background-color: rgba(116, 105, 218, 0.335);
 }
 
-.modeDL {
-  float: right;
-  border-style: none;
-  border-radius: 5px;
-  margin: 15px;
-  font-size: 1.2rem;
-  transition: .7s;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
 
 body {
   margin: 0px;
@@ -80,13 +69,6 @@ body {
   padding: 10px;
   max-width: 2000px;
 }
-
-
-.hamNav {
-  margin-top: 10px;
-  width: 100%;
- }
-
 
 @media only screen and (max-width: 1400px) {
   .grid {
@@ -115,7 +97,6 @@ body {
   li{
     float: none;
   }
-
 
 }
 
@@ -161,9 +142,6 @@ form.searchBar::after {
   display: table;
 }
 
-.testDiv {
-  font-size: 199px;
-}
 
 .switch {
   float: right;

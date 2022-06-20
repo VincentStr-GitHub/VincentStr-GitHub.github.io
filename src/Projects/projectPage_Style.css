@@ -4,7 +4,7 @@
     margin: 0 auto;
     height: 100%;
     display: grid;
-
+    background-color: rgba(182, 182, 182, 0.216);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
@@ -31,7 +31,6 @@
 }
 .project-links img,#codeIcon{
     max-width: 35px;
-
     padding-top: 10px;
 }
 
@@ -51,6 +50,9 @@
 .sImg{
     max-width: 100%;
     margin: 0 auto;
+    border-radius: 16px;
+}
+.infoText{
     border-radius: 16px;
 }
 
@@ -77,5 +79,8 @@
      }
      .project-preview{
         max-height: 40vh;
+    }
+    #item-Title h1{
+        font-size: 2.5rem;
     }
   }

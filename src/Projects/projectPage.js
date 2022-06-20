@@ -4,7 +4,7 @@ import "./projectPage_Style.css"
 
 import PersonalProject from "./ProjectType/personalProject";
 import SchoolProject from "./ProjectType/schoolProject";
-
+import DisplayLogos from "./displayLogos";
 
 
 
@@ -27,12 +27,12 @@ const ProjectPage = (props) => {
     }
     return (
 
-        <div className="projectPageGrid" style={props.modeStyle}>
-            <div className="project-item" id="item-Title"> <h1>{curProject.Name}</h1></div>
+        <div className="projectPageGrid" >
+            <div style={props.modeStyle} className="project-item" id="item-Title"> <h1>{curProject.Name}</h1></div>
              {projectType}
-            <div className="project-item" id={textStyle}> <p>Text</p> </div>
-            <div className="project-item" id="item-Tech"> TechUsed </div>
-            <div className="project-item"> {curProject.DateCreated}</div>
+            <div style={props.modeStyle} className="project-item" id={textStyle}> <p className="infoText">Text</p> </div>
+            <div style={props.modeStyle} className="project-item" id="item-Tech"> TechUsed    {/* <DisplayLogos techArr = {curProject.TechUsed} */}  </div>
+            <div style={props.modeStyle} className="project-item"> {curProject.DateCreated}</div>
         </div>
     )
 }
