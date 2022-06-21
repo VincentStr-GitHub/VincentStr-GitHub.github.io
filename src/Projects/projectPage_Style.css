@@ -55,7 +55,14 @@
 .infoText{
     border-radius: 16px;
 }
-
+ #item-Tech svg{
+    height: 10vh;
+    width: 10vh;
+    
+ }
+ #logoSvgs{
+    grid-template-columns: repeat(3, 1fr)
+ }
 @media only screen and (min-width: 833px) {
     #item-Title{
         grid-column: 1 / span 3;
@@ -63,9 +70,6 @@
     #item-Preview{
         grid-column: 1 / span 2;
         
-    }
-    #item-Tech{
-        grid-column: 1 / span 2;
     }
      #sText{
         grid-column: 2 / span 3;

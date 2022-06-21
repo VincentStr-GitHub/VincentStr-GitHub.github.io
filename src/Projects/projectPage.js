@@ -31,7 +31,7 @@ const ProjectPage = (props) => {
             <div style={props.modeStyle} className="project-item" id="item-Title"> <h1>{curProject.Name}</h1></div>
              {projectType}
             <div style={props.modeStyle} className="project-item" id={textStyle}> <p className="infoText">Text</p> </div>
-            <div style={props.modeStyle} className="project-item" id="item-Tech"> TechUsed    {/* <DisplayLogos techArr = {curProject.TechUsed} */}  </div>
+            <div style={props.modeStyle} className="project-item" id="item-Tech"> Built With <div id="logoSvgs"> <DisplayLogos techArr = {curProject.TechUsed} /> </div>  </div>
             <div style={props.modeStyle} className="project-item"> {curProject.DateCreated}</div>
         </div>
     )
