@@ -1,6 +1,6 @@
 .textAbout{
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     padding: 10vh;
 }
@@ -8,3 +8,30 @@
    min-height: 95vh;
    background-color: rgb(252, 252, 252);
 }
+
+@media only screen and (max-width: 833px) {
+    .textAbout{
+        font-size: 1.3rem;
+    }
+    .textAbout h1{
+        font-size: 1.8rem;
+    }
+  
+  }
+
+  @media only screen and (min-width: 833px) {
+    .textAbout{
+        padding-left: 15vh;
+        padding-right: 15vh;
+    }
+  
+  }
+
+
+  @media only screen and (min-width: 1280px) {
+    .textAbout{
+        padding-left: 20vh;
+        padding-right: 20vh;
+    }
+  
+  }

@@ -6,10 +6,24 @@
 }
 .contactPage{
    min-height: 95vh;
-   background-color: rgb(252, 252, 252);
 }
 .mailIcon{
    height: 30px;
    width: 30px;
    margin: 0 auto;
+   background-color: white;
+   padding: 5px;
+   border-radius: 6px;
+   box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+   
+   
 }
+#mailBlock{
+   grid-template-columns: repeat(3, 1fr)
+}
+#mailBlock .mailIcon h2{
+   padding-right: 10px;
+   align-items: center;
+
+}
+
