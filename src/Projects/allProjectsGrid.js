@@ -3,12 +3,12 @@ import CreateProjects from "./createProjects"
 import "./allProjectsGridStyle.css"
 
 
-const listProjects = [0,1,2,3]
+const listProjects = [0,1,2,3,4,5]
 
 function AllProjectsGrid(props) {
     return (
         <div> <h1 style={props.modeStyle} className="allprojectsHeader">Projects</h1>
-        <div id="projects" style={props.modeStyle}>
+        <div id="allProjects" style={props.modeStyle}>
           
             <div className="projectGrid">
                 {CreateProjects(listProjects)}

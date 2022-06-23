@@ -1,9 +1,4 @@
-import React, {Component} from "react";
-import HTML_Icon from "./TechLogos/html-Icon";
-import JS_Icon from "./TechLogos/js-Icon";
-import Java_Icon from "./TechLogos/java-Icon";
-import React_Icon from "./TechLogos/react-Icon";
-import CSS_Icon from "./TechLogos/css-Icon";
+import React from "react";
 import { lazy, Suspense } from 'react';
 
 

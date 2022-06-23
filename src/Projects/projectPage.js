@@ -20,7 +20,7 @@ const ProjectPage = (props) => {
     let projectType = null
     let textStyle = null
     if(curProject.Type === "Personal"){
-        projectType = <PersonalProject title={curProject.Name} preview ={curProject.Preview} />
+        projectType = <PersonalProject title={curProject.Name} preview ={curProject.Preview} github= {curProject.Github}/>
     } else{
         projectType = <SchoolProject img={curProject.Preview} />
        textStyle="sText"
@@ -31,8 +31,9 @@ const ProjectPage = (props) => {
             <div style={props.modeStyle} className="project-item" id="item-Title"> <h1>{curProject.Name}</h1></div>
              {projectType}
             <div style={props.modeStyle} className="project-item" id={textStyle}> <p className="infoText">Text</p> </div>
-            <div style={props.modeStyle} className="project-item" id="item-Tech"> Built With <div id="logoSvgs"> <DisplayLogos techArr = {curProject.TechUsed} /> </div>  </div>
-            <div style={props.modeStyle} className="project-item"> {curProject.DateCreated}</div>
+            <div style={props.modeStyle} className="project-item" id="item-Tech">  <b>Built With</b> <div id="logoSvgs"> <DisplayLogos techArr = {curProject.TechUsed} /> </div>  </div>
+            <div style={props.modeStyle} className="project-item" id="cDate"> <b>Date Created</b> {curProject.DateCreated}</div>
+            <div style={props.modeStyle} className="project-item" id="cDate"> <b>Status</b>  {curProject.Status}</div>
         </div>
     )
 }

@@ -12,23 +12,25 @@
         "HTML"
       ],
       "Preview": "https://simplecalculator-react.netlify.app/",
-      "Github":"",
-      "DateCreated": "05-06-2021"
+      "Github":"https://github.com/VincentStr/REACT-CALC",
+      "DateCreated": "05-06-2021",
+      "Status": "Complete"
     },
     {
       "Name": "Quote Generator",
       "ID": 1,
       "Type": "Personal",
       "CoverImg": "QuoteCover",
-      "CoverALT" : "",
+      "CoverALT" : "Create Quote Button",
       "TechUsed": [
         "React",
         "CSS",
         "HTML"
       ],
       "Preview": "https://quotegeneratorvs.netlify.app/",
-      "Github":"",
-      "DateCreated": "14-05-2021"
+      "Github":"https://github.com/VincentStr/Quote-Generator",
+      "DateCreated": "14-05-2021",
+      "Status": "Complete"
     },
     {
       "Name": "Pomodore Clock",
@@ -43,7 +45,8 @@
       ],
       "Preview": "",
       "Github":"",
-      "DateCreated": "20-6-2021"
+      "DateCreated": "20-6-2021",
+      "Status": "WIP"
     },
     {
       "Name": "Pathfinder",
@@ -56,7 +59,40 @@
       ],
       "Preview": "PathShow.gif",
       "Github":"",
-      "DateCreated": "30-3-2022"
+      "DateCreated": "30-3-2022",
+      "Status": "Complete"
+    },
+    {
+      "Name": "Slide Creator",
+      "ID": 4,
+      "Type": "Personal",
+      "CoverImg": "SlideCover",
+      "CoverALT" : "Menu",
+      "TechUsed": [
+        "JS",
+        "CSS",
+        "HTML"
+      ],
+      "Preview": "https://slidecreator.netlify.app/",
+      "Github":"https://github.com/VincentStr/Slide-Creator",
+      "DateCreated": "5-31-2022",
+      "Status": "WIP"
+    },
+    {
+      "Name": "Flappy Bird Clone",
+      "ID": 5,
+      "Type": "Personal",
+      "CoverImg": "FlappyCover",
+      "CoverALT" : "Flappy Bird Cover",
+      "TechUsed": [
+        "JS",
+        "CSS",
+        "HTML"
+      ],
+      "Preview": "https://jsflappy.netlify.app/",
+      "Github":"https://github.com/VincentStr/JS-Flappy",
+      "DateCreated": "9-2-2021",
+      "Status": "WIP"
     }
   ]
 }

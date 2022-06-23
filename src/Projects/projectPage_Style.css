@@ -63,6 +63,11 @@
  #logoSvgs{
     grid-template-columns: repeat(3, 1fr)
  }
+ #cDate{
+    display: flex;
+    justify-content: center;
+ }
+
 @media only screen and (min-width: 833px) {
     #item-Title{
         grid-column: 1 / span 3;

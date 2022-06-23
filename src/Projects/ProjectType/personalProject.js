@@ -6,7 +6,7 @@ const PersonalProject = (props) => {
     
           <div className="project-item" id="item-Preview">
                 <div class="iframe-loading"><iframe className="project-preview" title={props.title + "Project Preview"} src={props.preview}></iframe></div>
-                <div className="project-links"> <a href=""><img src={GitHubLogo} /></a> <div id="codeIcon"><ArrowIcon /></div> </div>
+                <div className="project-links"> <a href={props.github}><img src={GitHubLogo} /></a> <div id="codeIcon"> <a href={props.preview}><ArrowIcon /> </a></div> </div>
             </div>
 
     )
