@@ -37,14 +37,14 @@
       "ID": 2,
       "Type": "Personal",
       "CoverImg": "PomoCover",
-      "CoverALT" : "",
+      "CoverALT" : "Timer Menu Selection",
       "TechUsed": [
         "React",
         "CSS",
         "HTML"
       ],
-      "Preview": "",
-      "Github":"",
+      "Preview": "https://pomoclockreact.netlify.app/",
+      "Github":"https://github.com/VincentStr/PomoClock",
       "DateCreated": "20-6-2021",
       "Status": "WIP"
     },
