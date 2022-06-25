@@ -13,7 +13,6 @@ for(let i = 0; i < props.techArr.length ; i++){
     </Suspense>
   );
 }
-console.log(props.techArr.map(e => e.toLowerCase()))
 return logoArr
 
 };

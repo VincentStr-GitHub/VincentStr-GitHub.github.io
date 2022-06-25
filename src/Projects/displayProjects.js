@@ -14,7 +14,7 @@ const DisplayProjects = (props) => {
                 >
 
                     <p className='projectTitle'>{props.project.title}</p>
-                    <img
+                    <img width={800} height={600}
                         className='coverImage'
                         alt={props.project.alt}
                         src={props.project.cover}>

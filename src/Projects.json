@@ -11,7 +11,7 @@
         "CSS",
         "HTML"
       ],
-      "Preview": "https://simplecalculator-react.netlify.app/",
+      "Preview":"https://simplecalculator-react.netlify.app/",
       "Github":"https://github.com/VincentStr/REACT-CALC",
       "DateCreated": "05-06-2021",
       "Status": "Complete"
@@ -27,7 +27,7 @@
         "CSS",
         "HTML"
       ],
-      "Preview": "https://quotegeneratorvs.netlify.app/",
+      "Preview":"https://quotegeneratorvs.netlify.app/",
       "Github":"https://github.com/VincentStr/Quote-Generator",
       "DateCreated": "14-05-2021",
       "Status": "Complete"
@@ -43,7 +43,7 @@
         "CSS",
         "HTML"
       ],
-      "Preview": "https://pomoclockreact.netlify.app/",
+      "Preview":"https://pomoclockreact.netlify.app/",
       "Github":"https://github.com/VincentStr/PomoClock",
       "DateCreated": "20-6-2021",
       "Status": "WIP"
@@ -73,7 +73,7 @@
         "CSS",
         "HTML"
       ],
-      "Preview": "https://slidecreator.netlify.app/",
+      "Preview":"https://slidecreator.netlify.app/",
       "Github":"https://github.com/VincentStr/Slide-Creator",
       "DateCreated": "5-31-2022",
       "Status": "WIP"
@@ -89,10 +89,41 @@
         "CSS",
         "HTML"
       ],
-      "Preview": "https://jsflappy.netlify.app/",
+      "Preview":"https://jsflappy.netlify.app/",
       "Github":"https://github.com/VincentStr/JS-Flappy",
       "DateCreated": "9-2-2021",
       "Status": "WIP"
+    },
+    {
+      "Name": "Choropleth Map",
+      "ID": 6,
+      "Type": "Personal",
+      "CoverImg": "ChoroCover",
+      "CoverALT" : "Choropleth map of the US",
+      "TechUsed": [
+        "D3JS",
+        "CSS",
+        "HTML"
+      ],
+      "Preview":"https://usedumap.netlify.app/",
+      "Github":"https://github.com/VincentStr/Choropleth-Map---US-EDU",
+      "DateCreated": "7-19-2021",
+      "Status": "Complete"
+    },
+    {
+      "Name": "Twin Cities",
+      "ID": 7,
+      "Type": "School",
+      "CoverImg": "TwinCover",
+      "CoverALT" : "Checkerboard",
+      "TechUsed": [
+        "Java",
+        "SQL"
+      ],
+      "Preview": "TwinCover.jpg",
+      "Github":"",
+      "DateCreated": "30-3-2022",
+      "Status": "Complete"
     }
   ]
 }
