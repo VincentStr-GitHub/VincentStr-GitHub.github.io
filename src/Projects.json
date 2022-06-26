@@ -5,125 +5,150 @@
       "ID": 0,
       "Type": "Personal",
       "CoverImg": "CalcCover",
-      "CoverALT" : "Picture of a calculator",
+      "CoverALT": "Picture of a calculator",
       "TechUsed": [
         "React",
         "CSS",
         "HTML"
       ],
-      "Preview":"https://simplecalculator-react.netlify.app/",
-      "Github":"https://github.com/VincentStr/REACT-CALC",
+      "Preview": "https://simplecalculator-react.netlify.app/",
+      "Github": "https://github.com/VincentStr/REACT-CALC",
       "DateCreated": "05-06-2021",
-      "Status": "Complete"
+      "Status": "Complete",
+      "Description": "The Calculator project from the FCC Front End Course " 
     },
     {
       "Name": "Quote Generator",
       "ID": 1,
       "Type": "Personal",
       "CoverImg": "QuoteCover",
-      "CoverALT" : "Create Quote Button",
+      "CoverALT": "Create Quote Button",
       "TechUsed": [
         "React",
         "CSS",
         "HTML"
       ],
-      "Preview":"https://quotegeneratorvs.netlify.app/",
-      "Github":"https://github.com/VincentStr/Quote-Generator",
+      "Preview": "https://quotegeneratorvs.netlify.app/",
+      "Github": "https://github.com/VincentStr/Quote-Generator",
       "DateCreated": "14-05-2021",
-      "Status": "Complete"
+      "Status": "Complete",
+      "Description": "The Quote Generator project from the FCC Front End Course"
     },
     {
       "Name": "Pomodore Clock",
       "ID": 2,
       "Type": "Personal",
       "CoverImg": "PomoCover",
-      "CoverALT" : "Timer Menu Selection",
+      "CoverALT": "Timer Menu Selection",
       "TechUsed": [
         "React",
         "CSS",
         "HTML"
       ],
-      "Preview":"https://pomoclockreact.netlify.app/",
-      "Github":"https://github.com/VincentStr/PomoClock",
+      "Preview": "https://pomoclockreact.netlify.app/",
+      "Github": "https://github.com/VincentStr/PomoClock",
       "DateCreated": "20-6-2021",
-      "Status": "WIP"
+      "Status": "WIP",
+      "Description": "The Pomodore Clock project from the FCC Front End Course"
     },
     {
       "Name": "Pathfinder",
       "ID": 3,
       "Type": "School",
       "CoverImg": "PathCover",
-      "CoverALT" : "Checkerboard",
+      "CoverALT": "Checkerboard",
       "TechUsed": [
         "Java"
       ],
       "Preview": "PathShow.gif",
-      "Github":"",
+      "Github": "",
       "DateCreated": "30-3-2022",
-      "Status": "Complete"
+      "Status": "Complete",
+      "Description": "Assigment to create a pathfinder for the given 10x10 board"
     },
     {
       "Name": "Slide Creator",
       "ID": 4,
       "Type": "Personal",
       "CoverImg": "SlideCover",
-      "CoverALT" : "Menu",
+      "CoverALT": "Menu",
       "TechUsed": [
         "JS",
         "CSS",
         "HTML"
       ],
-      "Preview":"https://slidecreator.netlify.app/",
-      "Github":"https://github.com/VincentStr/Slide-Creator",
+      "Preview": "https://slidecreator.netlify.app/",
+      "Github": "https://github.com/VincentStr/Slide-Creator",
       "DateCreated": "5-31-2022",
-      "Status": "WIP"
+      "Status": "WIP",
+      "Description": ""
     },
     {
       "Name": "Flappy Bird Clone",
       "ID": 5,
       "Type": "Personal",
       "CoverImg": "FlappyCover",
-      "CoverALT" : "Flappy Bird Cover",
+      "CoverALT": "Flappy Bird Cover",
       "TechUsed": [
         "JS",
         "CSS",
         "HTML"
       ],
-      "Preview":"https://jsflappy.netlify.app/",
-      "Github":"https://github.com/VincentStr/JS-Flappy",
+      "Preview": "https://jsflappy.netlify.app/",
+      "Github": "https://github.com/VincentStr/JS-Flappy",
       "DateCreated": "9-2-2021",
-      "Status": "WIP"
+      "Status": "WIP",
+      "Description": "A clone of the popular mobile game Flappy Bird made in JS"
     },
     {
       "Name": "Choropleth Map",
       "ID": 6,
       "Type": "Personal",
       "CoverImg": "ChoroCover",
-      "CoverALT" : "Choropleth map of the US",
+      "CoverALT": "Choropleth map of the US",
       "TechUsed": [
         "D3JS",
         "CSS",
         "HTML"
       ],
-      "Preview":"https://usedumap.netlify.app/",
-      "Github":"https://github.com/VincentStr/Choropleth-Map---US-EDU",
+      "Preview": "https://usedumap.netlify.app/",
+      "Github": "https://github.com/VincentStr/Choropleth-Map---US-EDU",
       "DateCreated": "7-19-2021",
-      "Status": "Complete"
+      "Status": "Complete",
+      "Description": ""
     },
     {
       "Name": "Twin Cities",
       "ID": 7,
       "Type": "School",
       "CoverImg": "TwinCover",
-      "CoverALT" : "Checkerboard",
+      "CoverALT": "Checkerboard",
       "TechUsed": [
         "Java",
         "SQL"
       ],
       "Preview": "TwinCover.jpg",
-      "Github":"",
+      "Github": "",
       "DateCreated": "30-3-2022",
-      "Status": "Complete"
+      "Status": "Complete",
+      "Description": "Assigment to query the given DataBase and return the Twin Cities of each map"
+    },
+    {
+      "Name": "Drum",
+      "ID": 8,
+      "Type": "Personal",
+      "CoverImg": "DrumCover",
+      "CoverALT": "Virtual Drum board",
+      "TechUsed": [
+        "JS",
+        "CSS",
+        "HTML"
+      ],
+      "Preview": "https://drum-project-js.netlify.app/",
+      "Github": "https://github.com/VincentStr/DrumJS",
+      "DateCreated": "3-13-2021",
+      "Status": "Complete",
+      "Description": ""
     }
   ]
 }
