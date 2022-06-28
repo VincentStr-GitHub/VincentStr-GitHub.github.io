@@ -7,9 +7,7 @@ import Project from "./Projects/project";
 import About from "./About/about";
 import PageNotFound from "./PageNotFound/pageNF";
 import ProjectPage from "./Projects/projectPage";
-
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -26,20 +24,37 @@ const darkStyle = {
 }
 
 function App() {
-    const [mode, setMode] = React.useState(true)
-    const [curMode, setCurMode] = React.useState("Light Mode")
-    const [modeStyle, setModeStyle] = React.useState(lightStyle)
+    const [colorScheme, setColorScheme] = useState({
+        status: true,
+        text: "Light Mode",
+        style: lightStyle
+    })
 
-    function unCheck() {
+    const unCheck = () => {
         document.querySelector('#hamCheckBox').checked = false;
     }
 
-    function handleClick() {
-        setMode(!mode)
-
-        mode ? setCurMode("Dark Mode") : setCurMode("Light Mode")
-        mode ? setModeStyle(darkStyle) : setModeStyle(lightStyle)
+    const handleClick = () =>  {
+        const curStatus = !(colorScheme.status)
+        colorScheme.status ?
+            setColorScheme({ ...colorScheme, status: curStatus, text: "Dark Mode", style: darkStyle })
+            :
+            setColorScheme({ ...colorScheme, status: curStatus, text: "Light Mode", style: lightStyle })
     }
+
+    // check user color scheme 
+    useEffect(() => {
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            handleClick()
+            try {
+                document.querySelector('#modeCheckBox').checked = true;
+            } catch (error) {
+
+            }
+        }
+    }, []);
+
     return (
         <body>
             <div id="page-container">
@@ -58,12 +73,12 @@ function App() {
                                 <div className="modeBtn">
                                     {/* Switch for Dark or Light Mode */}
                                     <label className="switch">
-                                        <input aria-label="Dark and Light Mode switch" name="modeSwitch" onClick={handleClick} type="checkbox" />
+                                        <input aria-label="Dark and Light Mode switch" name="modeSwitch" id="modeCheckBox" onClick={handleClick} type="checkbox" />
                                         <span className="slider round"></span>
                                     </label>
 
-                                    <div className="modeText" style={{ float: 'right', paddingRight: '0.5rem', margin: "0 auto" }}>
-                                        <p style={{ color: 'white' }}><b>{curMode}</b></p>
+                                    <div className="modeText" style={{ float: 'right', paddingRight: '0.5rem', margin: "0 auto", }}>
+                                        <p style={{ color: 'white' }}><b>{colorScheme.text}</b></p>
                                     </div>
 
                                 </div>
@@ -75,8 +90,8 @@ function App() {
                                         <li onClick={unCheck}><Link to="contact">Contact</Link></li>
                                         <li>
                                             <form className="searchBar">
-                                                <input placeholder="Search" id="searchB" style={modeStyle} type="text"></input>
-                                                <button aria-label="Search Button" name="submit" style={modeStyle} type="submit"><i className="fa fa-search"></i></button>
+                                                <input placeholder="Search" id="searchB" style={colorScheme.style} type="text"></input>
+                                                <button aria-label="Search Button" name="submit" style={colorScheme.style} type="submit"><i className="fa fa-search"></i></button>
                                             </form>
                                         </li>
                                     </ul>
@@ -88,13 +103,13 @@ function App() {
 
                 <div id="content-wrap">
                     <Routes>
-                        <Route path="/" element={<Home modeStyle={modeStyle} />} />
+                        <Route path="/" element={<Home modeStyle={colorScheme.style} />} />
                         <Route path="*" element={<PageNotFound />} />
-                        <Route path="contact" element={<Contact modeStyle={modeStyle} />} />
-                        <Route path="dist/index.html" element={<Home modeStyle={modeStyle} />} />
-                        <Route path="projects" element={<Project modeStyle={modeStyle} />} />
-                        <Route path="projects/:projectId" element={<ProjectPage modeStyle={modeStyle} />} />
-                        <Route path="about" element={<About modeStyle={modeStyle} />} />
+                        <Route path="contact" element={<Contact modeStyle={colorScheme.style} />} />
+                        <Route path="dist/index.html" element={<Home modeStyle={colorScheme.style} />} />
+                        <Route path="projects" element={<Project modeStyle={colorScheme.style} />} />
+                        <Route path="projects/:projectId" element={<ProjectPage modeStyle={colorScheme.style} />} />
+                        <Route path="about" element={<About modeStyle={colorScheme.style} />} />
                     </Routes>
                 </div>
                 <Footer />
