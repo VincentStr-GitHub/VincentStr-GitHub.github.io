@@ -47,9 +47,9 @@
     position: absolute;
     display: block;
     height: 32px;
-    width: 32px;
-    top: 20px;
-    left: 20px;
+    width: 42px;
+    top: 12px;
+    left: 12px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;

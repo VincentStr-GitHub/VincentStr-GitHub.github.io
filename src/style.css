@@ -229,3 +229,9 @@ input:checked+.slider:before {
   height: 70px;
   width: 100%;
 }
+
+.loading-div{
+  margin: 0 auto;
+  font-size: 5rem;
+  color: black;
+}

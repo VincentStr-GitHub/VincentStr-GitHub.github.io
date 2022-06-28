@@ -2,14 +2,28 @@ import "./style.css"
 import "./hamNavStyle.css"
 import Home from "./Home/home";
 import Footer from "./Footer/footer";
-import Contact from "./Contact/contact";
-import Project from "./Projects/project";
-import About from "./About/about";
-import PageNotFound from "./PageNotFound/pageNF";
-import ProjectPage from "./Projects/projectPage";
-import React, { useState, useEffect } from "react";
+
+
+
+
+
+//import Project from "./Projects/project";
+//import About from "./About/about";
+//import PageNotFound from "./PageNotFound/pageNF";
+//import ProjectPage from "./Projects/projectPage";
+
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+
+const PageNotFound = lazy(() => import('./PageNotFound/pageNF'));
+const About = lazy(() => import('./About/about'));
+const Contact = lazy(() => import('./Contact/contact'));
+const ProjectPage = lazy(() => import('./Projects/projectPage'));
+const Project = lazy(() => import('./Projects/project'));
+
+
 
 const lightStyle = {
     color: "black",
@@ -34,7 +48,7 @@ function App() {
         document.querySelector('#hamCheckBox').checked = false;
     }
 
-    const handleClick = () =>  {
+    const handleClick = () => {
         const curStatus = !(colorScheme.status)
         colorScheme.status ?
             setColorScheme({ ...colorScheme, status: curStatus, text: "Dark Mode", style: darkStyle })
@@ -118,4 +132,4 @@ function App() {
     )
 }
 
-ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
+ReactDOM.render(<Router><Suspense fallback={<div className="loading-div">Loading...</div>}> <App /></Suspense></Router>, document.getElementById("root"))
