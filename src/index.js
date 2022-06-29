@@ -2,28 +2,18 @@ import "./style.css"
 import "./hamNavStyle.css"
 import Home from "./Home/home";
 import Footer from "./Footer/footer";
-
-
-
-
-
-//import Project from "./Projects/project";
-//import About from "./About/about";
-//import PageNotFound from "./PageNotFound/pageNF";
-//import ProjectPage from "./Projects/projectPage";
+import Contact from "./Contact/contact";
+import Project from "./Projects/project";
+import About from "./About/about";
+import PageNotFound from "./PageNotFound/pageNF";
+import ProjectPage from "./Projects/projectPage";
 
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
-const PageNotFound = lazy(() => import('./PageNotFound/pageNF'));
-const About = lazy(() => import('./About/about'));
-const Contact = lazy(() => import('./Contact/contact'));
-const ProjectPage = lazy(() => import('./Projects/projectPage'));
-const Project = lazy(() => import('./Projects/project'));
-
-
+const GitHubLogo = require("./projects/images/GitHub-Mark-Light-64px.png")
 
 const lightStyle = {
     color: "black",
@@ -94,7 +84,7 @@ function App() {
                                     <div className="modeText" style={{ float: 'right', paddingRight: '0.5rem', margin: "0 auto", }}>
                                         <p style={{ color: 'white' }}><b>{colorScheme.text}</b></p>
                                     </div>
-
+                                    
                                 </div>
                                 <div class="menu-items">
                                     <ul className="menuBtns">
@@ -102,12 +92,15 @@ function App() {
                                         <li onClick={unCheck}><Link to="projects">Projects</Link></li>
                                         <li onClick={unCheck}><Link to="About">About</Link></li>
                                         <li onClick={unCheck}><Link to="contact">Contact</Link></li>
-                                        <li>
+                                        <li> <div className="gitHubLogo"> <a href="https://github.com/VincentStr"><img alt="GitHub Logo" src={GitHubLogo}/></a> </div> </li>
+                                        
+                                       {/*  <li>
                                             <form className="searchBar">
                                                 <input placeholder="Search" id="searchB" style={colorScheme.style} type="text"></input>
                                                 <button aria-label="Search Button" name="submit" style={colorScheme.style} type="submit"><i className="fa fa-search"></i></button>
                                             </form>
-                                        </li>
+                                        </li> */}
+
                                     </ul>
                                 </div>
                             </div>
@@ -132,4 +125,4 @@ function App() {
     )
 }
 
-ReactDOM.render(<Router><Suspense fallback={<div className="loading-div">Loading...</div>}> <App /></Suspense></Router>, document.getElementById("root"))
+ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))

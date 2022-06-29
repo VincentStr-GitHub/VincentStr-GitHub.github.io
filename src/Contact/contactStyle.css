@@ -27,3 +27,14 @@
 
 }
 
+
+@media only screen and (max-width: 833px) {
+   .textContact{
+       font-size: 0.8rem;
+   }
+   #mailBlock{
+      font-size: 0.7rem;
+   }
+  
+ }
+

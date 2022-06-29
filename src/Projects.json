@@ -78,10 +78,11 @@
         "HTML"
       ],
       "Preview": "https://slidecreator.netlify.app/",
+      "Size" :{"width" : 800, "height" : 800},
       "Github": "https://github.com/VincentStr/Slide-Creator",
       "DateCreated": "5-31-2022",
       "Status": "WIP",
-      "Description": ""
+      "Description": "A tool to create carousel slideshows. The carousel can be any needed size, the size can also be changed on demand. Image urls are needed, alt descriptions are recommended"
     },
     {
       "Name": "Flappy Bird Clone",
@@ -128,6 +129,7 @@
         "SQL"
       ],
       "Preview": "TwinCover.jpg",
+      "Size" :{"width" : 800, "height" : 600},
       "Github": "",
       "DateCreated": "24-5-2022",
       "Status": "Complete",

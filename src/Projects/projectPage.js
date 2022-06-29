@@ -22,7 +22,7 @@ const ProjectPage = (props) => {
     if(curProject.Type === "Personal"){
         projectType = <PersonalProject title={curProject.Name} preview ={curProject.Preview} github= {curProject.Github}/>
     } else{
-        projectType = <SchoolProject img={curProject.Preview} />
+        projectType = <SchoolProject img={curProject.Preview} size={curProject.Size} />
        textStyle="sText"
     }
     return (

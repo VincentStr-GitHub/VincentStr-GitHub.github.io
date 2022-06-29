@@ -12,12 +12,7 @@
    
   }
   
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 62px;
-  }
+
   
   .navBarHam .menu-items {
     display: flex;
@@ -38,9 +33,7 @@
  
   
   .nav-container {
-    display: block;
-    position: relative;
-    height: 60px;
+    height: 62px;
   }
   
   .nav-container .checkbox {
