@@ -1,7 +1,7 @@
 import React from 'react';
 import "./mainImageStyle.css"
 
-const Logo = require("./Logo.jpg")
+const Logo = require("./Logo.webp")
 
 const MainImage = () => {
     

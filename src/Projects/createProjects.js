@@ -9,7 +9,7 @@ const CreateProjects = (pArr) => {
         const curProject = projectJSON.Projects[pArr[i]];
         let curImg; 
         try {
-            curImg = require("./images/"+ curProject.CoverImg + ".jpg");
+            curImg = require("./images/"+ curProject.CoverImg + ".webp");
            
           } catch (error) {
             curImg = "";

@@ -92,7 +92,7 @@ function App() {
                                         <li onClick={unCheck}><Link to="projects">Projects</Link></li>
                                         <li onClick={unCheck}><Link to="About">About</Link></li>
                                         <li onClick={unCheck}><Link to="contact">Contact</Link></li>
-                                        <li> <div className="gitHubLogo"> <a href="https://github.com/VincentStr"><img alt="GitHub Logo" src={GitHubLogo}/></a> </div> </li>
+                                        <li> <div className="gitHubLogo"> <a href="https://github.com/VincentStr"><img width ="35" height="35" alt="GitHub Logo" src={GitHubLogo}/></a> </div> </li>
                                         
                                        {/*  <li>
                                             <form className="searchBar">
