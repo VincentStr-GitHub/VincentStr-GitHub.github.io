@@ -15,7 +15,16 @@
       "Github": "https://github.com/VincentStr/REACT-CALC",
       "DateCreated": "05-06-2021",
       "Status": "Complete",
-      "Description": "The Calculator project from the FCC Front End Course " 
+      "Heading": "The Calculator project from the FCC Front End Course ",
+      "List" :[
+        "Supports the 4 basic math operations",
+        "Each number only allows for one decimal",
+        "Negative Numbers are supported",
+        "Both Clear and Delete buttons",
+        "Whole numbers cannont start with a 0"
+
+      ],
+      "Description": ""
     },
     {
       "Name": "Quote Generator",
@@ -32,7 +41,11 @@
       "Github": "https://github.com/VincentStr/Quote-Generator",
       "DateCreated": "14-05-2021",
       "Status": "Complete",
-      "Description": "The Quote Generator project from the FCC Front End Course"
+      "Heading": "The Quote Generator project from the FCC Front End Course",
+      "List": [
+        ""
+      ],
+      "Description": ""
     },
     {
       "Name": "Pomodore Clock",
@@ -49,7 +62,11 @@
       "Github": "https://github.com/VincentStr/PomoClock",
       "DateCreated": "20-6-2021",
       "Status": "WIP",
-      "Description": "The Pomodore Clock project from the FCC Front End Course"
+      "Heading": "The Pomodore Clock project from the FCC Front End Course",
+      "List": [
+        ""
+      ],
+      "Description": ""
     },
     {
       "Name": "Pathfinder",
@@ -64,7 +81,14 @@
       "Github": "",
       "DateCreated": "30-3-2022",
       "Status": "Complete",
-      "Description": "Assigment to create a pathfinder for the given 10x10 board"
+      "Heading": "Assigment to create a pathfinder for a given 10x10 map",
+      "List": [
+        "Should work on all 10x10 maps (that have a possible path)",
+        "Needs to not exceed the maximum  number of steps nor the maximum time limit",
+        "Blue Squares (Water) are obstacles the pathfinder must overcome",
+        "The Pathfinder cannont go out of the 10x10 area"
+      ],
+      "Description": "The A* algorithm was implemented for this project. The best path is pre-calculated and then executed. The cost to move is always one therefore diagonal movement is also used."
     },
     {
       "Name": "Slide Creator",
@@ -78,11 +102,16 @@
         "HTML"
       ],
       "Preview": "https://slidecreator.netlify.app/",
-      "Size" :{"width" : 800, "height" : 800},
       "Github": "https://github.com/VincentStr/Slide-Creator",
       "DateCreated": "5-31-2022",
       "Status": "WIP",
-      "Description": "A tool to create carousel slideshows. The carousel can be any needed size, the size can also be changed on demand. Image urls are needed, alt descriptions are recommended"
+      "Heading": "A tool to create carousel slideshows",
+      "List": [
+        "The carousel can be any needed size",
+        "Size can also be changed on demand",
+        "Image urls are needed, alt descriptions are recommended"
+      ],
+      "Description": ""
     },
     {
       "Name": "Flappy Bird Clone",
@@ -99,7 +128,11 @@
       "Github": "https://github.com/VincentStr/JS-Flappy",
       "DateCreated": "9-2-2021",
       "Status": "WIP",
-      "Description": "A clone of the popular mobile game Flappy Bird made in JS"
+      "Heading": "A clone of the popular mobile game Flappy Bird made in JS",
+      "List": [
+        ""
+      ],
+      "Description": ""
     },
     {
       "Name": "Choropleth Map",
@@ -116,6 +149,10 @@
       "Github": "https://github.com/VincentStr/Choropleth-Map---US-EDU",
       "DateCreated": "7-19-2021",
       "Status": "Complete",
+      "Heading": "",
+      "List" :[
+        ""
+      ],
       "Description": ""
     },
     {
@@ -129,11 +166,14 @@
         "SQL"
       ],
       "Preview": "TwinCover.webp",
-      "Size" :{"width" : 800, "height" : 600},
       "Github": "",
       "DateCreated": "24-5-2022",
       "Status": "Complete",
-      "Description": "Assigment to query the given DataBase and return the Twin Cities of each map"
+      "Heading": "Assigment to query the given DataBase and return the Twin Cities of each map",
+      "List" :[
+        ""
+      ],
+      "Description": ""
     },
     {
       "Name": "Drum",
@@ -150,6 +190,10 @@
       "Github": "https://github.com/VincentStr/DrumJS",
       "DateCreated": "3-13-2021",
       "Status": "Complete",
+      "Heading": "",
+      "List" :[
+        ""
+      ],
       "Description": ""
     }
   ]
