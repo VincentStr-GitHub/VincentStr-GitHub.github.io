@@ -15,7 +15,7 @@
       "Github": "https://github.com/VincentStr/REACT-CALC",
       "DateCreated": "05-06-2021",
       "Status": "Complete",
-      "Heading": "The Calculator project from the FCC Front End Course ",
+      "Heading": "The Calculator project from the free Code Camp Front End Course ",
       "List" :[
         "Supports the 4 basic math operations",
         "Each number only allows for one decimal",
@@ -41,9 +41,11 @@
       "Github": "https://github.com/VincentStr/Quote-Generator",
       "DateCreated": "14-05-2021",
       "Status": "Complete",
-      "Heading": "The Quote Generator project from the FCC Front End Course",
+      "Heading": "The Quote Generator project from the free Code Camp Front End Course",
       "List": [
-        ""
+        "The quotes come from a JSON file",
+        "A new color should appear every time a new quote is generated",
+        "The quote author should be displayed"
       ],
       "Description": ""
     },
@@ -62,9 +64,13 @@
       "Github": "https://github.com/VincentStr/PomoClock",
       "DateCreated": "20-6-2021",
       "Status": "WIP",
-      "Heading": "The Pomodore Clock project from the FCC Front End Course",
+      "Heading": "The Pomodore Clock project from the free Code Camp Front End Course",
       "List": [
-        ""
+        "Both the session and break time can be incremented and decremented, to as low as 1 minute and to as high as 60",
+        "Once the time is over timer should switch from session to break and vice versa",
+        "The time should be able to be paused and resumed",
+        "Values should be resettable",
+        "Once the timer finishes a sound will be played"
       ],
       "Description": ""
     },
