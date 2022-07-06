@@ -24,7 +24,7 @@
         "Whole numbers cannont start with a 0"
 
       ],
-      "Description": ""
+      "Description": "Future ideas are to implement more advanced features such as: exponents, sin, cos, tan, log, ln, etc."
     },
     {
       "Name": "Quote Generator",
@@ -117,7 +117,7 @@
         "Size can also be changed on demand",
         "Image urls are needed, alt descriptions are recommended"
       ],
-      "Description": ""
+      "Description": "The output is HTML, with a style and script element, copied directly to the clipboard ease of implementation"
     },
     {
       "Name": "Flappy Bird Clone",
@@ -136,7 +136,7 @@
       "Status": "WIP",
       "Heading": "A clone of the popular mobile game Flappy Bird made in JS",
       "List": [
-        ""
+        "A Scoreboard to keep track of highest scores of the current session"
       ],
       "Description": ""
     },
@@ -198,7 +198,7 @@
       "Status": "Complete",
       "Heading": "",
       "List" :[
-        ""
+        "Each button plays an associated sound"
       ],
       "Description": ""
     }

@@ -77,12 +77,12 @@
 .objectives-List li {
     list-style: circle;
     float: none;
-    list-style-position: inside;
+    list-style-position: outside;
     text-align: left;
 }
 
 .objectives-List {
-
+    margin-left: 20px;
     margin-top: 10px;
     overflow: visible;
     padding: 0.5rem;
