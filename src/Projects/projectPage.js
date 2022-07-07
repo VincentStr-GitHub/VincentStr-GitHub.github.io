@@ -32,7 +32,7 @@ const ProjectPage = (props) => {
             <div style={props.modeStyle} className="project-item" id="item-Title"> <h1>{curProject.Name}</h1></div>
             {projectType}
             <div style={props.modeStyle} className="project-item" id={textStyle}>
-                <p className="infoText">{curProject.Heading}
+                <p className="infoText"><h2 style={{fontSize:"1.3rem"}}>{curProject.Heading}</h2>
                 <ul className="objectives-List"><h3>Objectives / Requirements</h3><BList listArr={curProject.List} /></ul> 
                <p style={{textAlign:"left",padding:"10px"}}> {curProject.Description}</p> </p></div>
             <div style={props.modeStyle} className="project-item" id="item-Tech">  <b>Built With</b> <div id="logoSvgs"> <DisplayLogos techArr={curProject.TechUsed} /> </div>  </div>
