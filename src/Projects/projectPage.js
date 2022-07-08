@@ -18,7 +18,7 @@ const ProjectPage = (props) => {
     }
     const curProject = curObj[0]
     let projectType = null
-    let textStyle = null
+    let textStyle = "pText"
     if (curProject.Type === "Personal") {
         projectType = <PersonalProject title={curProject.Name} preview={curProject.Preview} github={curProject.Github} />
     } else {
@@ -32,12 +32,12 @@ const ProjectPage = (props) => {
             <div style={props.modeStyle} className="project-item" id="item-Title"> <h1>{curProject.Name}</h1></div>
             {projectType}
             <div style={props.modeStyle} className="project-item" id={textStyle}>
-                <p className="infoText"><h2 style={{fontSize:"1.3rem"}}>{curProject.Heading}</h2>
-                <ul className="objectives-List"><h3>Objectives / Requirements</h3><BList listArr={curProject.List} /></ul> 
-               <p style={{textAlign:"left",padding:"10px"}}> {curProject.Description}</p> </p></div>
+                <p className="infoText"><h2 style={{ fontSize: "1.3rem" }}>{curProject.Heading}</h2>
+                    <ul className="objectives-List"><h3>Objectives / Requirements</h3><BList listArr={curProject.List} /></ul>
+                    <p style={{ textAlign: "left", padding: "10px" }}> {curProject.Description}</p> </p></div>
             <div style={props.modeStyle} className="project-item" id="item-Tech">  <b>Built With</b> <div id="logoSvgs"> <DisplayLogos techArr={curProject.TechUsed} /> </div>  </div>
             <div style={props.modeStyle} className="project-item" id="cDate"> <b>Date Created</b> {curProject.DateCreated}</div>
-            <div style={props.modeStyle} className="project-item" id="cDate"> <b>Status</b>  {curProject.Status}</div>
+            <div style={props.modeStyle} className="project-item" id="statText"> <b>Status</b>  {curProject.Status}</div>
         </div>
     )
 }

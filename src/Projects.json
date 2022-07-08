@@ -117,7 +117,7 @@
         "Size can also be changed on demand",
         "Image urls are needed, alt descriptions are recommended"
       ],
-      "Description": "The output is HTML, with a style and script element, copied directly to the clipboard ease of implementation"
+      "Description": "The output is HTML, with a style and script element, copied directly to the clipboard ease of implementation."
     },
     {
       "Name": "Flappy Bird Clone",
@@ -177,9 +177,10 @@
       "Status": "Complete",
       "Heading": "Assigment to query the given DataBase and return the Twin Cities of each map",
       "List" :[
-        ""
+        "Twin cities are cities where the average road length is less than or equal 70% of the average road lenght of the given map",
+        "Returned is: Map name and Id, number of cities, the average road length and the twin cities with the distance between the pair"
       ],
-      "Description": ""
+      "Description": "This project is written in Java, with JDBC."
     },
     {
       "Name": "Drum",
