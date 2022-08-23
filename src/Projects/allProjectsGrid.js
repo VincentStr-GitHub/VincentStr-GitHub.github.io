@@ -3,7 +3,7 @@ import CreateProjects from "./createProjects"
 import "./allProjectsGridStyle.css"
 
 
-const listProjects = [0,1,2,3,4,5,6,7,8]
+const listProjects = [0,1,2,3,4,5,9,6,7,8]
 
 function AllProjectsGrid(props) {
     return (

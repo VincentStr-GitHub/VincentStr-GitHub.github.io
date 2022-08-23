@@ -202,6 +202,28 @@
         "Each button plays an associated sound"
       ],
       "Description": ""
+    },
+    {
+      "Name": "Weather App",
+      "ID": 9,
+      "Type": "Personal",
+      "CoverImg": "WeatherCover",
+      "CoverALT": "WeatherApp DashBoard",
+      "TechUsed": [
+        "Angular",
+        "CSS",
+        "HTML",
+        "Typescript"
+      ],
+      "Preview": "https://angular-weatherapp.netlify.app/",
+      "Github": "https://github.com/VincentStr/WeatherApp",
+      "DateCreated": "22-08-2022",
+      "Status": "Complete",
+      "Heading": "",
+      "List" :[
+        ""
+      ],
+      "Description": ""
     }
   ]
 }
