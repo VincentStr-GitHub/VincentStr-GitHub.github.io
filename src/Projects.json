@@ -219,11 +219,12 @@
       "Github": "https://github.com/VincentStr/WeatherApp",
       "DateCreated": "22-08-2022",
       "Status": "Complete",
-      "Heading": "",
+      "Heading": "A Weather App using the Yahoo weather API.",
       "List" :[
-        ""
+        "Data from different cites should be obtainable",
+        "Different background image for each weather condition"
       ],
-      "Description": ""
+      "Description": "All data comes the from the Yahoo Weather API"
     }
   ]
 }
