@@ -2,7 +2,7 @@ import React from 'react';
 import CreateProjects from "../Projects/createProjects"
 
 
-const mainPArr = [0,1,2,3]
+const mainPArr = [0,9,2,3]
 
 function Projects(props) {
     return (

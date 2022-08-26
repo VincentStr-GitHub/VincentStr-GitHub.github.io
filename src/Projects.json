@@ -222,7 +222,8 @@
       "Heading": "A Weather App using the Yahoo weather API.",
       "List" :[
         "Data from different cites should be obtainable",
-        "Different background image for each weather condition"
+        "Different background image for each weather condition",
+        "10 Day Forcast for each location"
       ],
       "Description": "All data comes the from the Yahoo Weather API"
     }
