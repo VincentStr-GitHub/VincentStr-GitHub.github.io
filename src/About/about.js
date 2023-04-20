@@ -7,7 +7,7 @@ const About = (props) => {
                 <h1>  <b>Hi, <br /> I’m Vincent. </b> </h1>
                 <p>
                    
-                    I am currently in my 3rd semester studying Computer Science at the Technische Hochschule Ulm.<br /> <br />
+                    I am currently in my 4th semester studying Computer Science at the Technische Hochschule Ulm.<br /> <br />
 
                     I am passionate about everything computer related, from the internal hardware to the software that makes it all work. 
                     My focus lies with writing code to create programs that solve problems and make life easier. 
